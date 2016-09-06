@@ -1,0 +1,1 @@
+@include('common._static_', ['type' => 'head'])

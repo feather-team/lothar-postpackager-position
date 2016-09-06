@@ -1,0 +1,15 @@
+{
+  "name": "lothar-postpackager-position",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lothar",
+    "feather2"
+  ],
+  "author": "jsyczhanghao@sina.com",
+  "license": "ISC"
+}
