@@ -25,5 +25,6 @@ if(empty($FEATHER_PAGELET_INCLUDE)){
             $__env->share('FEATHER_BOTTOM_RESOURCE_LOADED', true);
         }
     }
-    echo eval('?>' . implode('', $output));
+
+    echo eval('?>' . $this->getCompiler()->compileString(implode('', $output)));
 }
