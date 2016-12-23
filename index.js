@@ -19,12 +19,12 @@ module.exports = function(ret){
             var content = file.getContent();
 
             if(file.isPagelet){
-                content = HEAD_TPL + content;
+                content = HEAD_TPL + '\n' + content;
             }else{
                 content = content.replace(HEAD_REG, function(all, tag){
-                    return HEAD_TPL + (tag || '');
+                    return '\n' + HEAD_TPL + '\n' + (tag || '');
                 }).replace(BOTTOM_REG, function(all, tag){
-                    return BOTTOM_TPL + (tag || '');
+                    return '\n' + BOTTOM_TPL + '\n' + (tag || '');
                 });
             }
 
